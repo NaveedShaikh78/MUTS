@@ -1,0 +1,29 @@
+<div ng-cloak>
+  <md-content>
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="Live">
+        <md-content layout="row" layout-wrap>
+          <div ng-repeat="x in $ctrl.machines"> </div>
+          <muts-machine ng-repeat="mac in $ctrl.machines" machine="mac">
+          </muts-machine>
+        </md-content>
+      </md-tab>
+      <md-tab label="Reports">
+        <md-content class="md-padding">
+         <div ui-grid="{ data: $ctrl.myData }" class="myGrid"></div>
+        </md-content>
+      </md-tab>
+      <md-tab label="Operator">
+        <md-content class="md-padding">
+          Operator
+        </md-content>
+      </md-tab>
+      <md-tab label="Jobs">
+        <md-content class="md-padding">
+          Jobs
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</div>
+<md-progress-circular md-diameter="96" ng-show="$ctrl.app.spin" class ="loader"></md-progress-circular>

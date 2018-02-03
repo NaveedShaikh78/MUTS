@@ -1,0 +1,94 @@
+.cssload-container{
+	width:25px;
+}
+muts-machine {
+	.led {
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		display: flex;
+			display: -o-flex;
+			display: -ms-flex;
+			display: -webkit-flex;
+			display: -moz-flex;
+	}
+	.led:before {
+		content:"";
+		width: 0;
+		height: 0;
+		margin:auto;
+		border: 4px solid rgb(255,255,255);
+		border-radius: 50%;
+		animation:loading6-ani1 1.6s infinite;
+			-o-animation:loading6-ani1 1.6s infinite;
+			-ms-animation:loading6-ani1 1.6s infinite;
+			-webkit-animation:loading6-ani1 1.6s infinite;
+			-moz-animation:loading6-ani1 1.6s infinite;
+	}
+	.on {
+		background: rgb(0, 128, 0);
+	}
+	.off {
+		background: rgb(255,89,84);
+	}
+
+}
+@keyframes loading6-ani1{
+	70%{
+		width: 25px;
+		height: 25px;
+	}
+	100%{
+		width: 25px;
+		height: 25px;
+		border-width: 0;
+	}
+}
+
+@-o-keyframes loading6-ani1{
+	70%{
+		width: 25px;
+		height: 4px;
+	}
+	100%{
+		width: 25px;
+		height: 25px;
+		border-width: 0;
+	}
+}
+
+@-ms-keyframes loading6-ani1{
+	70%{
+		width: 25px;
+		height: 25px;
+	}
+	100%{
+		width: 25px;
+		height: 25px;
+		border-width: 0;
+	}
+}
+
+@-webkit-keyframes loading6-ani1{
+	70%{
+		width: 25px;
+		height: 25px;
+	}
+	100%{
+		width: 25px;
+		height: 25px;
+		border-width: 0;
+	}
+}
+
+@-moz-keyframes loading6-ani1{
+	70%{
+		width: 25px;
+		height: 25px;
+	}
+	100%{
+		width: 25px;
+		height: 25px;
+		border-width: 0;
+	}
+}
