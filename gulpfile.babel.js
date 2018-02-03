@@ -101,7 +101,7 @@ gulp.task('component', () => {
   const cap = (val) => {
     return val.charAt(0).toUpperCase() + val.slice(1);
   };
-  const name = yargs.argv.name;
+  const name = 'reports';//yargs.argv.name;
   const parentPath = yargs.argv.parent || '';
   const destPath = path.join(resolveToComponents(), parentPath, name);
 

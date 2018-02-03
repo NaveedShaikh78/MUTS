@@ -1,12 +1,12 @@
 import angular from 'angular';
-import Home from './home/home';
+import Dashboard from './dashboard/dashboard';
 import About from './about/about';
+import Machine from './machine/machine';
 
 let componentModule = angular.module('app.components', [
-  Home,
-  About
-])
-
-.name;
+  Dashboard,
+  About,
+  Machine
+]).name;
 
 export default componentModule;
