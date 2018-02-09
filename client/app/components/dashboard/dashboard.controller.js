@@ -23,22 +23,22 @@ class DashboardController {
     // Login to Server
     var apiParam = { 'username': 'global', 'password': 'global@#', 'cuid': "" };
     
-    HttpService
-      .loadapi("login.php", apiParam)
-      .then(response => HttpService.SetCUId(response.data));
-    setInterval(() => { this.getCurrentStatus(HttpService) }, 1000);
+    // HttpService
+    //   .loadapi("login.php", apiParam)
+    //   .then(response => HttpService.SetCUId(response.data));
+    // // setInterval(() => { this.getCurrentStatus(HttpService) }, 1000);
 
-    this.machines.forEach(machine=>{
-      machine.app = Application;
-    })
-    // Loading Idle List
-    var apiParam = { "rtype": "getData" };
-    HttpService.loadapi("idle.php", apiParam)
-    .then(response => Application.idleList = response.data);
-    HttpService.loadapi("job.php", apiParam)
-    .then(response => Application.jobList = response.data);
-    HttpService.loadapi("operator.php", apiParam)
-    .then(response => Application.operatorList = response.data);
+    // this.machines.forEach(machine=>{
+    //   machine.app = Application;
+    // })
+    // // Loading Idle List
+    // // var apiParam = { "rtype": "getData" };
+    // HttpService.loadapi("idle.php", apiParam)
+    // .then(response => Application.idleList = response.data);
+    // HttpService.loadapi("job.php", apiParam)
+    // .then(response => Application.jobList = response.data);
+    // HttpService.loadapi("operator.php", apiParam)
+    // .then(response => Application.operatorList = response.data);
     
 
   }

@@ -1,10 +1,11 @@
+$ledsize :20px; 
 .cssload-container{
-	width:25px;
+	width:$ledsize;
 }
 muts-machine {
 	.led {
-		width: 25px;
-		height: 25px;
+		width: $ledsize;
+		height: $ledsize;
 		border-radius: 50%;
 		display: flex;
 			display: -o-flex;
@@ -35,60 +36,60 @@ muts-machine {
 }
 @keyframes loading6-ani1{
 	70%{
-		width: 25px;
-		height: 25px;
+		width: $ledsize;
+		height: $ledsize;
 	}
 	100%{
-		width: 25px;
-		height: 25px;
+		width: $ledsize;
+		height: $ledsize;
 		border-width: 0;
 	}
 }
 
 @-o-keyframes loading6-ani1{
 	70%{
-		width: 25px;
+		width: $ledsize;
 		height: 4px;
 	}
 	100%{
-		width: 25px;
-		height: 25px;
+		width: $ledsize;
+		height: $ledsize;
 		border-width: 0;
 	}
 }
 
 @-ms-keyframes loading6-ani1{
 	70%{
-		width: 25px;
-		height: 25px;
+		width: $ledsize;
+		height: $ledsize;
 	}
 	100%{
-		width: 25px;
-		height: 25px;
+		width: $ledsize;
+		height: $ledsize;
 		border-width: 0;
 	}
 }
 
 @-webkit-keyframes loading6-ani1{
 	70%{
-		width: 25px;
-		height: 25px;
+		width: $ledsize;
+		height: $ledsize;
 	}
 	100%{
-		width: 25px;
-		height: 25px;
+		width: $ledsize;
+		height: $ledsize;
 		border-width: 0;
 	}
 }
 
 @-moz-keyframes loading6-ani1{
 	70%{
-		width: 25px;
-		height: 25px;
+		width: $ledsize;
+		height: $ledsize;
 	}
 	100%{
-		width: 25px;
-		height: 25px;
+		width: $ledsize;
+		height: $ledsize;
 		border-width: 0;
 	}
 }

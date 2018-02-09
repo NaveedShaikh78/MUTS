@@ -1,3 +1,43 @@
-<div>
-  <h1>{{ $ctrl.name }}</h1>
-</div>
+<md-card>
+  <md-content>
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab>
+        <md-tab-label>
+          <div >Machine</div>
+        </md-tab-label>
+        <md-tab-body>
+          <div class="cycle-led" layout="row" layout-wrap>
+            <div flex="40" class="bottom-border">Count</div>
+            <div flex="60">13</div>
+            <div flex="40">Timer</div>
+
+            <div flex="60">
+              <div class="led off"></div>
+              <md-progress-linear value="40"></md-progress-linear>
+            </div>
+            <div flex="40">Operator</div>
+            <select ng-options="op.opname for op in operators" ng-model="$ctrl.machine.selOperator" class="bottom-border" flex="60">
+              <option selected="selected" value="" hidden="">Select</option></select>
+            <div flex="40">Job</div>
+            <select ng-options="job.jobname for job in jobs" ng-model="$ctrl.machine.selJob" class="bottom-border" flex="60">
+              <option selected="selected" value="" hidden=""> Select</option></select>
+            <div flex="40">Idle</div>
+            <select ng-options="idle.idledesc for idle in idles" ng-model="$ctrl.machine.selIdle" class="bottom-border" flex="60">
+              <option selected="selected" value="" hidden="">Select</option></select>
+          </div>
+        </md-tab-body>
+      </md-tab>
+      <md-tab>
+        <md-tab-label>
+          <md-icon md-svg-icon="chart">
+        </md-tab-label>
+        <md-tab-body>
+          <div ui-grid="{ data: $ctrl.myData }" class="myGrid"></div>
+        </md-tab-body>
+        <md-content class="md-padding">
+
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </md-content>
+</md-card>

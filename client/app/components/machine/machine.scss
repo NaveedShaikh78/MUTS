@@ -1,3 +1,30 @@
-.machine {
-  color: red;
+muts-machine {
+   md-tabs {
+      padding: 5px;
+      width: 170px;
+      height: 150px;
+  }
+  md-tabs-canvas, md-pagination-wrapper {
+    height: 30px !important;
+  }
+  md-tab {
+    padding: 0px 5px !important;
+    line-height: 0px !important;
+  }
+  .md-tab {
+    padding: 0px 5px !important;
+  }
+  md-tab-content {
+    padding: 5px;
+  }
+  div[flex], .bottom-border {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    background: transparent;
+    border-bottom:1px solid #EAECEE;
+  }
+  div[flex ='40']{
+    border-right:1px solid #EAECEE;
+  }
 }

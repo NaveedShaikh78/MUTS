@@ -6,7 +6,7 @@ let machineModule = angular.module('machine', [
   uiRouter
 ])
 
-.component('machine', machineComponent)
+.component('mutsMachine', machineComponent)
 
 .name;
 

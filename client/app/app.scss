@@ -15,3 +15,8 @@
   height: 50px !important;
   overflow-x: auto !important; //remove horizontal scrollbar if not necessary
 }
+
+
+select:focus, textarea:focus, input:focus{
+    outline: none;
+}
